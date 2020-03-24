@@ -1,4 +1,4 @@
-FROM tomcat:8.0
-ADD target/*.war /usr/local/tomcat/webapps/
+FROM tomcat:9-jdk8
+ADD target/vanilla-web-app-1.0.0-SNAPSHOT.war /usr/local/tomcat/webapps/
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
