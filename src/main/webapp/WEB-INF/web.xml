@@ -14,9 +14,23 @@
         <servlet-class>pl.kamil.servlet.HelloWorldServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>MenuServlet</servlet-name>
+        <servlet-class>pl.kamil.servlet.MenuServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>HelloWorldServlet</servlet-name>
         <url-pattern>/hello.html</url-pattern>
     </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>MenuServlet</servlet-name>
+        <url-pattern>/restaurant/menu.html</url-pattern>
+    </servlet-mapping>
 </web-app> 
