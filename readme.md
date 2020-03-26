@@ -13,10 +13,12 @@ mvn clean install to create war
 or use embedded tomcat (mvn dependency)
 
 test with: `http://localhost:8080/vanilla-web-app-1.0.0-SNAPSHOT/hello.html`
+`name war ROOT.war, so this name is not needed`
+`http://localhost:8080/hello.html`
 
 # teoria
 * serwer - maszyna
-* web serwer/serwer aplikacyjny - software na serwerze nasluchujacy zadan klientow
+* web serwer/serwer aplikacyjny - software na serwerze nasluchujacy zadan klientow np. tomcat
 * web servery obsluguja specyficzne 'jary' - pliki war - web archive
 * wary trzeba dostosowac do pracy z aplikacja
 
@@ -25,7 +27,7 @@ test with: `http://localhost:8080/vanilla-web-app-1.0.0-SNAPSHOT/hello.html`
 * /WEB-INF - folder z web information. Serwer aplikacyjny zapewnia, ze klient nie ma dostepu tutaj
     * /classes
     * /lib
-    * web.xml - konfiguracja aplikacji
+    * web.xml - konfiguracja aplikacji. Urle, filtry, serwlety
 *  /META-INFO - info o warze. Dla jarow jest ciekawe, dla warow niespecjalnie. klasy i inne metadane
     * manifest - plil z danymi, wersja wara, ile plikow w srodku etc.
     

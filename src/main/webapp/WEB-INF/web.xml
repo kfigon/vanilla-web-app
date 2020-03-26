@@ -18,6 +18,10 @@
         <servlet-name>MenuServlet</servlet-name>
         <servlet-class>pl.kamil.servlet.MenuServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SearchResultServlet</servlet-name>
+        <servlet-class>pl.kamil.servlet.SearchResultServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>HelloWorldServlet</servlet-name>
@@ -25,12 +29,11 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>HelloWorldServlet</servlet-name>
-        <url-pattern>/</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>MenuServlet</servlet-name>
-        <url-pattern>/restaurant/menu.html</url-pattern>
+        <url-pattern></url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchResultServlet</servlet-name>
+        <url-pattern>/searchResults.html</url-pattern>
     </servlet-mapping>
 </web-app> 

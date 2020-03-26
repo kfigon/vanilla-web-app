@@ -30,6 +30,7 @@ public class MenuServlet extends HttpServlet {
                     out.write("<li>" + i + "</li>\n");
             }
 
+            out.write("<a href='search.html'>go to search</a>");
             out.write("</ul>\n" +
                     "</body>\n" +
                     "</html>");
