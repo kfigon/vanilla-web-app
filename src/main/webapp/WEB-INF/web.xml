@@ -22,12 +22,25 @@
         <servlet-name>SearchResultServlet</servlet-name>
         <servlet-class>pl.kamil.servlet.SearchResultServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RedirectionServlet</servlet-name>
+        <servlet-class>pl.kamil.servlet.RedirectionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CookieProductingServlet</servlet-name>
+        <servlet-class>pl.kamil.servlet.CookieProductingServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CookieReadingServlet</servlet-name>
+        <servlet-class>pl.kamil.servlet.CookieReadingServlet</servlet-class>
+    </servlet>
+
+
 
     <servlet-mapping>
         <servlet-name>HelloWorldServlet</servlet-name>
         <url-pattern>/hello.html</url-pattern>
     </servlet-mapping>
-
     <servlet-mapping>
         <servlet-name>MenuServlet</servlet-name>
         <url-pattern></url-pattern>
@@ -36,4 +49,18 @@
         <servlet-name>SearchResultServlet</servlet-name>
         <url-pattern>/searchResults.html</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RedirectionServlet</servlet-name>
+        <url-pattern>/receivePost</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CookieProductingServlet</servlet-name>
+        <url-pattern>/sendDataForCookie.html</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CookieReadingServlet</servlet-name>
+        <url-pattern>/readCookie.html</url-pattern>
+    </servlet-mapping>
+
 </web-app> 
