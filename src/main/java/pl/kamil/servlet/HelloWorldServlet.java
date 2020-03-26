@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 public class HelloWorldServlet extends HttpServlet {
 
     @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         try (PrintWriter out = resp.getWriter()) {
             resp.setContentType("text/html");
             out.println("<html><body>" +

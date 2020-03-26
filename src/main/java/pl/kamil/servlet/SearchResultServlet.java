@@ -14,6 +14,7 @@ import java.util.stream.Collectors;
 public class SearchResultServlet extends HttpServlet {
     private MenuService menuService = new MenuService();
 
+//    all methods
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
