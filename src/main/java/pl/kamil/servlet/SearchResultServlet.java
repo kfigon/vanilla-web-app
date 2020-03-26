@@ -16,6 +16,11 @@ public class SearchResultServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+
+        // jesli bylby post na form, to dane bylyby nie w query a w form data
+        //Content-Type: application/x-www-form-urlencoded
+        // form data-> searchTerm: fish
+
         try(PrintWriter out = resp.getWriter()) {
             resp.setContentType("text/html");
 
