@@ -20,6 +20,8 @@ public class SessionServlet extends HttpServlet {
 //        can be anything here, even objects
 //        easier API than regular cookies
 
+//        we can enable using jsessionid passed in query, if user
+//        has cookies disabled
         HttpSession session = req.getSession();
 
         Integer timesEntered = Optional.ofNullable(session.getAttribute(TIMES))

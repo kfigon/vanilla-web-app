@@ -38,7 +38,10 @@
         <servlet-name>SessionServlet</servlet-name>
         <servlet-class>pl.kamil.servlet.SessionServlet</servlet-class>
     </servlet>
-
+    <servlet>
+        <servlet-name>SecuredServlet</servlet-name>
+        <servlet-class>pl.kamil.servlet.SecuredServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>HelloWorldServlet</servlet-name>
@@ -69,4 +72,44 @@
         <servlet-name>SessionServlet</servlet-name>
         <url-pattern>/session</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SecuredServlet</servlet-name>
+        <url-pattern>/secured</url-pattern>
+    </servlet-mapping>
+
+
+
+    <session-config>
+        <!-- in minutes -->
+        <session-timeout>5</session-timeout>
+    </session-config>
+
+<!--    //    java servlet api - only authorization (roles)-->
+<!--    //    authentication - web server specific stuff. -->
+<!-- //It's not   configured on java ee/servlet level. Use a framework-->
+
+
+    <security-role>
+        <role-name>admin</role-name>
+    </security-role>
+    
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>this is my secured servlet</web-resource-name>
+            <url-pattern>/secured</url-pattern>
+        </web-resource-collection>
+    <auth-constraint>
+        <role-name>admin</role-name>
+    </auth-constraint>
+    </security-constraint>
+
+
+<!--roles and passwords in tomcat-users.xml-->
+<!--    authentication. Popup will appear -->
+<!--    request: -->
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>Secured stuff</realm-name>
+    </login-config>
+
 </web-app> 
