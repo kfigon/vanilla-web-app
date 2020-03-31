@@ -34,7 +34,10 @@
         <servlet-name>CookieReadingServlet</servlet-name>
         <servlet-class>pl.kamil.servlet.CookieReadingServlet</servlet-class>
     </servlet>
-
+    <servlet>
+        <servlet-name>SessionServlet</servlet-name>
+        <servlet-class>pl.kamil.servlet.SessionServlet</servlet-class>
+    </servlet>
 
 
     <servlet-mapping>
@@ -62,5 +65,8 @@
         <servlet-name>CookieReadingServlet</servlet-name>
         <url-pattern>/readCookie.html</url-pattern>
     </servlet-mapping>
-
+    <servlet-mapping>
+        <servlet-name>SessionServlet</servlet-name>
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
 </web-app> 
