@@ -15,7 +15,7 @@ public class SessionServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 //        it will add unique ID in cookies to user and store it in requests
 //        to access session data in the backend.
-//        in cookie it will be some random id
+//        in cookie it will be some random id and key JSESSIONID
 
 //        can be anything here, even objects
 //        easier API than regular cookies
