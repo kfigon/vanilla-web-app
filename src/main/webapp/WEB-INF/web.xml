@@ -108,7 +108,7 @@
 <!--    authentication. Popup will appear -->
 <!--    request: -->
     <login-config>
-        <auth-method>BASIC</auth-method>
+        <auth-method>BASIC</auth-method> <!-- FORM for custom login form -->
         <realm-name>Secured stuff</realm-name>
     </login-config>
 
