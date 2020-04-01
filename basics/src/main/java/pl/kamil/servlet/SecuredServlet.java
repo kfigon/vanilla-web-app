@@ -9,6 +9,7 @@ import java.io.PrintWriter;
 
 public class SecuredServlet extends HttpServlet {
 //    curl --user "admin:admin" localhost:8080/secured
+// request.getUserPrincipal().gerName() - logged user name
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
             try(PrintWriter out = resp.getWriter()) {
