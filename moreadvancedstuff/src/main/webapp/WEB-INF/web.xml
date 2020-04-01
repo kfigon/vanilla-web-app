@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+    <display-name>Ricky's Restaurant</display-name>
+    <description>
+        The menu and online ordering system for Ricky's Restaurant
+    </description>
+
+<!--sometimes needed on some webservers-->
+<!--    <security-role>-->
+    <!--        <role-name>admin</role-name>-->
+    <!--    </security-role>-->
+
+<!--this needs to stay for security config-->
+    <login-config>
+        <auth-method>BASIC</auth-method> <!-- FORM for custom login form -->
+        <realm-name>Secured stuff</realm-name>
+    </login-config>
+</web-app>
