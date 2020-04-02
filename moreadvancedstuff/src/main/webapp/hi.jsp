@@ -5,6 +5,8 @@ index.jsp tez moze byc--%>
 <%--mozna te zalaczac sub jsp--%>
 
 <%--jsp powoduje tworzenie servletu w runtime przez api--%>
+
+<%--jstl - lib z customowymi tagami jsp, nie trzeba pisac dziwnych javo-htmli --%>
 <head>
     <title>Title</title>
 </head>
