@@ -33,6 +33,11 @@
             <artifactId>tomcat-jsp-api</artifactId>
             <version>${tomcat.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-websocket-api</artifactId>
+            <version>${tomcat.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
