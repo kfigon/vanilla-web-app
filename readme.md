@@ -39,4 +39,6 @@ deploy - stawiamy serwer, kopiujemy wara do /webaps w webserwerze. Tomcat wykryj
 dynamicznie generowane htmle, zamiast statyczne. kazdy request generuje kontent,
 
 servlet - klasa javowa do obslugi zadan http, dziala w web apliakcji na serwerze aplikacyjnym  
+
+## websocket - dwukierunkowe polaczneie po http, mozna wysylac dane z backendu na front!
     
