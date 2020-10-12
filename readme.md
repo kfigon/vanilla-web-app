@@ -1,4 +1,4 @@
-# Making a web app without any framework using pure java
+# Making a web app vanilla java EE
 
 # required
 java 8, docker
